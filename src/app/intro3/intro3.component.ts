@@ -1,0 +1,10 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-intro3',
+  templateUrl: './intro3.component.html',
+  styleUrls: ['./intro3.component.css']
+})
+export class Intro3Component {
+
+}

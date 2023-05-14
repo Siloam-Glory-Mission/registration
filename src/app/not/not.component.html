@@ -1,0 +1,109 @@
+<div class="min-h-full">
+    <main>
+      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <div id="form" class="block bg-slate-50 p-6 round-xl shadow-md shadow-slate-300 w-90">
+            <form [formGroup]="notbaptised" (ngSubmit)="onsubmit()">
+                <h2 class="text-blue-700 text-3x1 font-semibold my-4 text-center">Siloam Glory Mission <br>Registration Form</h2>
+                <div id="fullname" >
+                    <!-- class="w-1/2 mr-1" -->
+                    <div id="unique" >
+                        <label class="text-sm" >Unique ID</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="code" [(ngModel)]="randomNumber" readonly  >
+                    </div><br>
+                    <div id="surname">
+                        <label class="text-sm">Surname</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Surname" formControlName="surname" required>
+                    </div><br>
+                    <div id="name">
+                        <label class="text-sm">Name</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Name" formControlName="name" required>
+                    </div><br>
+                    <div id="baptised_status">
+                        <label class="text-sm">Baptised Status</label>
+                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="status" (change)="onChange($event)">
+                            <option value="">Select Baptised Status</option>
+                            <option value="Baptised">Baptised</option>
+                            <option value="Not-Baptised">Not-Baptised</option>
+                        </select>
+                    </div><br>
+                   
+                    <div id="gender">
+                        <label class="text-sm">Gender</label>
+                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="sex" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div><br>
+                    <div id="dob">
+                        <label class="text-sm">Date Of Birth</label>
+                        <input type="date" (change)="dobage($any($event.target).value)" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="dob" required>
+                    </div><br>
+                    <div id="age">
+                        <label class="text-sm">Age</label>
+                        <input type="text" [(ngModel)]="dage" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="age" readonly >
+                    </div><br>
+                    <div id="occupation">
+                        <label class="text-sm">Occupation</label>
+                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="occupation" required>
+                            <option value="">Select Occupation</option>
+                            <option value="Pastor">Pastor</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Software">Software Developer</option>
+                            <option value="Business">Business</option>
+                            <option value="Studying">Studying</option>
+                            <option value="House Wife">House Wife</option>
+                            <option value="Others">Others</option>
+
+                        </select>
+                    </div><br>
+                    <div id="marital">
+                        <label class="text-sm">Marital Status</label>
+                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="marital" required>
+                            <option value="">Select Marital Status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Widowed">Widowed</option>
+                            <option value="Divorced">Divorced</option>
+                        </select>
+                     </div><br>
+                     <div id="dno">
+                        <label class="text-sm">D.No.</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="dno" placeholder="Enter D.no" required>
+                    </div><br>
+                    <div id="street">
+                        <label class="text-sm">Street Details</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="parish" placeholder="Enter Street Details" required>
+                    </div><br>
+                    <div id="area">
+                        <label class="text-sm">Area</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="village" placeholder="Enter Area" required>
+                    </div><br>
+                    <div id="city">
+                        <label class="text-sm">City</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="city" placeholder="Enter City" required>
+                    </div><br>
+                    <div id="email">
+                        <label class="text-sm">E-Mail</label>
+                        <input type="email" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="email" placeholder="Enter E-mail" >
+                    </div><br>
+                    <div id="phone">
+                        <label class="text-sm">Phone Number</label>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm"formControlName="phone" placeholder="Enter Phone Number" required>
+                    </div><br>
+                    <div id="submit" >
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Submit
+                          </button>
+                    </div><br>
+                     
+                     
+
+                </div>
+            </form>
+
+        </div>
+      </div>
+    </main>
+  </div>

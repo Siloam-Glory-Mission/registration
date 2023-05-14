@@ -1,0 +1,2757 @@
+html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+html {
+font-family: Inter;
+font-size: 16px;
+}
+
+body {
+font-weight: 400;
+font-style:normal;
+text-decoration: none;
+text-transform: none;
+letter-spacing: normal;
+line-height: 1.15;
+color: var(--dl-color-gray-black);
+background-color: var(--dl-color-gray-white);
+
+}
+.slide-screens-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slide-screens-slide-screens {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background-color: rgba(251, 251, 251, 1);
+  }
+  .slide-screens-text {
+    top: 520px;
+    left: 20px;
+    color: rgba(37, 37, 37, 1);
+    height: auto;
+    position: absolute;
+    font-size: 36px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .slide-screens-rectangle2 {
+    top: 700px;
+    left: 28px;
+    width: 16px;
+    height: 6px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .slide-screens-rectangle3 {
+    top: 700px;
+    left: 46px;
+    width: 13px;
+    height: 6px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .slide-screens-rectangle4 {
+    top: 700px;
+    left: 61px;
+    width: 13px;
+    height: 6px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .slide-screens-next-button {
+    top: 678px;
+    left: 282px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  .slide-screens-childadoptionrafiki1 {
+    top: 141px;
+    left: -1px;
+    width: 361px;
+    height: 390px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .slide-screens-freepikbackgroundcompleteinject97 {
+    top: 42.900001525878906px;
+    left: 0px;
+    width: 361px;
+    height: 270.2388000488281px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector {
+    top: 255.3719940185547px;
+    left: 0px;
+    width: 361px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector001 {
+    top: 267.92218017578125px;
+    left: 300.9151611328125px;
+    width: 24px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector002 {
+    top: 270.0437927246094px;
+    left: 232.8666534423828px;
+    width: 6px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector003 {
+    top: 260.68377685546875px;
+    left: 286.3379821777344px;
+    width: 14px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector004 {
+    top: 261.99420166015625px;
+    left: 37.87611770629883px;
+    width: 31px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector005 {
+    top: 261.99420166015625px;
+    left: 75.49231719970703px;
+    width: 5px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector006 {
+    top: 265.2857971191406px;
+    left: 94.92134094238281px;
+    width: 68px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector007 {
+    top: -0.0000015258789289873675px;
+    left: 27.58761978149414px;
+    width: 148px;
+    height: 221px;
+    position: absolute;
+  }
+  .slide-screens-vector008 {
+    top: -0.0000015258789289873675px;
+    left: 183.74899291992188px;
+    width: 148px;
+    height: 221px;
+    position: absolute;
+  }
+  .slide-screens-vector009 {
+    top: 254.42039489746094px;
+    left: 200.73043823242188px;
+    width: 160px;
+    height: 77px;
+    position: absolute;
+  }
+  .slide-screens-vector010 {
+    top: 254.98980712890625px;
+    left: 207.12013244628906px;
+    width: 160px;
+    height: 77px;
+    position: absolute;
+  }
+  .slide-screens-vector011 {
+    top: 213.79022216796875px;
+    left: 198.8965606689453px;
+    width: 144px;
+    height: 29px;
+    position: absolute;
+  }
+  .slide-screens-vector012 {
+    top: 246.5502471923828px;
+    left: 198.8965606689453px;
+    width: 144px;
+    height: 29px;
+    position: absolute;
+  }
+  .slide-screens-vector013 {
+    top: 190.51499938964844px;
+    left: 93.13800048828125px;
+    width: 20px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector014 {
+    top: 190.51499938964844px;
+    left: 113.54171752929688px;
+    width: 5px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector015 {
+    top: 186.89578247070312px;
+    left: 87.78797912597656px;
+    width: 15px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector016 {
+    top: 186.89578247070312px;
+    left: 103.10881805419922px;
+    width: 4px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector017 {
+    top: 190.51499938964844px;
+    left: 85.67252349853516px;
+    width: 13px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector018 {
+    top: 190.51499938964844px;
+    left: 98.59632110595703px;
+    width: 3px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector019 {
+    top: 194.48519897460938px;
+    left: 71.07368469238281px;
+    width: 17px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector020 {
+    top: 194.48519897460938px;
+    left: 88.0190200805664px;
+    width: 4px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector021 {
+    top: 191.4744110107422px;
+    left: 66.62615966796875px;
+    width: 13px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector022 {
+    top: 191.4744110107422px;
+    left: 79.35502624511719px;
+    width: 4px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector023 {
+    top: 194.48519897460938px;
+    left: 63.2399787902832px;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector024 {
+    top: 194.48519897460938px;
+    left: 75.61505889892578px;
+    width: 2px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector025 {
+    top: 222.19859313964844px;
+    left: 156.63067626953125px;
+    width: 20px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector026 {
+    top: 222.19859313964844px;
+    left: 177.03439331054688px;
+    width: 5px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector027 {
+    top: 218.57940673828125px;
+    left: 151.28065490722656px;
+    width: 15px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector028 {
+    top: 218.57940673828125px;
+    left: 166.60150146484375px;
+    width: 4px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector029 {
+    top: 222.19859313964844px;
+    left: 87.02265930175781px;
+    width: 20px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector030 {
+    top: 222.19859313964844px;
+    left: 107.42637634277344px;
+    width: 5px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector031 {
+    top: 218.57940673828125px;
+    left: 81.67264556884766px;
+    width: 15px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector032 {
+    top: 218.57940673828125px;
+    left: 96.99347686767578px;
+    width: 4px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector033 {
+    top: 222.19859313964844px;
+    left: 149.17242431640625px;
+    width: 13px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector034 {
+    top: 222.19859313964844px;
+    left: 162.09622192382812px;
+    width: 3px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector035 {
+    top: 226.16879272460938px;
+    left: 134.5663604736328px;
+    width: 17px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector036 {
+    top: 226.16879272460938px;
+    left: 151.5189208984375px;
+    width: 4px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector037 {
+    top: 223.16578674316406px;
+    left: 130.11883544921875px;
+    width: 13px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector038 {
+    top: 223.16578674316406px;
+    left: 142.8477020263672px;
+    width: 4px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector039 {
+    top: 226.16879272460938px;
+    left: 126.73265838623047px;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector040 {
+    top: 226.16879272460938px;
+    left: 139.1077423095703px;
+    width: 2px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector041 {
+    top: 189.7342529296875px;
+    left: 144.25833129882812px;
+    width: 22px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector042 {
+    top: 197.91357421875px;
+    left: 153.769287109375px;
+    width: 4px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector043 {
+    top: 197.86856079101562px;
+    left: 147.0306396484375px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector044 {
+    top: 192.3430938720703px;
+    left: 157.86416625976562px;
+    width: 5px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector045 {
+    top: 196.69078063964844px;
+    left: 159.3949737548828px;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector046 {
+    top: 196.26856994628906px;
+    left: 149.59176635742188px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector047 {
+    top: 194.7102813720703px;
+    left: 155.88580322265625px;
+    width: 2px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector048 {
+    top: 193.7679901123047px;
+    left: 151.88931274414062px;
+    width: 3px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector049 {
+    top: 195.05972290039062px;
+    left: 147.99508666992188px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector050 {
+    top: 191.4034423828125px;
+    left: 152.54090881347656px;
+    width: 4px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector051 {
+    top: 201.79379272460938px;
+    left: 148.84751892089844px;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector052 {
+    top: 200.80320739746094px;
+    left: 147.70675659179688px;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector053 {
+    top: 195.6942138671875px;
+    left: 113.54171752929688px;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector054 {
+    top: 230.79420471191406px;
+    left: 96.88518524169922px;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector055 {
+    top: 200.28839111328125px;
+    left: 88.0190200805664px;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector056 {
+    top: 232.61940002441406px;
+    left: 177.48204040527344px;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector057 {
+    top: 208.9385986328125px;
+    left: 108.31444549560547px;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector058 {
+    top: 227.05799865722656px;
+    left: 107.42637634277344px;
+    width: 5px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector059 {
+    top: 229.3278045654297px;
+    left: 151.5189208984375px;
+    width: 4px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector060 {
+    top: 195.96719360351562px;
+    left: 76.01216125488281px;
+    width: 2px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector061 {
+    top: 147.3887939453125px;
+    left: 298.17877197265625px;
+    width: 82px;
+    height: 134px;
+    position: absolute;
+  }
+  .slide-screens-vector062 {
+    top: 147.3887939453125px;
+    left: 298.7347412109375px;
+    width: 86px;
+    height: 134px;
+    position: absolute;
+  }
+  .slide-screens-vector063 {
+    top: 141.59339904785156px;
+    left: 294.27996826171875px;
+    width: 77px;
+    height: 124px;
+    position: absolute;
+  }
+  .slide-screens-vector064 {
+    top: 141.59339904785156px;
+    left: 220.19557189941406px;
+    width: 3px;
+    height: 124px;
+    position: absolute;
+  }
+  .slide-screens-vector065 {
+    top: 90.5736083984375px;
+    left: 219.88511657714844px;
+    width: 3px;
+    height: 75px;
+    position: absolute;
+  }
+  .slide-screens-vector066 {
+    top: 20.36580467224121px;
+    left: 219.8850860595703px;
+    width: 3px;
+    height: 75px;
+    position: absolute;
+  }
+  .slide-screens-vector067 {
+    top: 87.43800354003906px;
+    left: 295.8395080566406px;
+    width: 79px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector068 {
+    top: 47.7593994140625px;
+    left: 108.8053970336914px;
+    width: 25px;
+    height: 38px;
+    position: absolute;
+  }
+  .slide-screens-vector069 {
+    top: 49.56119918823242px;
+    left: 110.43712615966797px;
+    width: 22px;
+    height: 35px;
+    position: absolute;
+  }
+  .slide-screens-vector070 {
+    top: 61.066192626953125px;
+    left: 140.3279266357422px;
+    width: 25px;
+    height: 38px;
+    position: absolute;
+  }
+  .slide-screens-vector071 {
+    top: 62.868003845214844px;
+    left: 141.96685791015625px;
+    width: 22px;
+    height: 35px;
+    position: absolute;
+  }
+  .slide-screens-vector072 {
+    top: 93.40499877929688px;
+    left: 133.8948974609375px;
+    width: 24px;
+    height: 32px;
+    position: absolute;
+  }
+  .slide-screens-vector073 {
+    top: 94.99620819091797px;
+    left: 132.3931427001953px;
+    width: 21px;
+    height: 29px;
+    position: absolute;
+  }
+  .slide-screens-vector074 {
+    top: 104.5823974609375px;
+    left: 175.8358917236328px;
+    width: 27px;
+    height: 36px;
+    position: absolute;
+  }
+  .slide-screens-vector075 {
+    top: 106.35298919677734px;
+    left: 174.16806030273438px;
+    width: 24px;
+    height: 32px;
+    position: absolute;
+  }
+  .slide-screens-vector076 {
+    top: 156.13259887695312px;
+    left: 133.90211486816406px;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+  }
+  .slide-screens-vector077 {
+    top: 154.72079467773438px;
+    left: 132.61695861816406px;
+    width: 17px;
+    height: 27px;
+    position: absolute;
+  }
+  .slide-screens-vector078 {
+    top: 164.405517578125px;
+    left: 281.2041320800781px;
+    width: 33px;
+    height: 59px;
+    position: absolute;
+  }
+  .slide-screens-vector079 {
+    top: 185.46682739257812px;
+    left: 249.51611328125px;
+    width: 26px;
+    height: 38px;
+    position: absolute;
+  }
+  .slide-screens-vector080 {
+    top: 162.53640747070312px;
+    left: 259.3070983886719px;
+    width: 31px;
+    height: 61px;
+    position: absolute;
+  }
+  .slide-screens-vector081 {
+    top: 214.92120361328125px;
+    left: 264.651611328125px;
+    width: 27px;
+    height: 40px;
+    position: absolute;
+  }
+  .slide-screens-vector082 {
+    top: 213.51719665527344px;
+    left: 262.2231750488281px;
+    width: 32px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-freepik-shadowinject97 {
+    top: 315.8376159667969px;
+    left: 40.51142120361328px;
+    width: 279.9771728515625px;
+    height: 17.65918731689453px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-freepikpathinject97 {
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    height: 18px;
+    position: absolute;
+  }
+  .slide-screens-freepik-garlandsinject97 {
+    top: 42.900001525878906px;
+    left: 28.39626121520996px;
+    width: 303.01617431640625px;
+    height: 50.505001068115234px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector083 {
+    top: 10.194598197937012px;
+    left: 29.753620147705078px;
+    width: 242px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector084 {
+    top: 15.233397483825684px;
+    left: 39.746097564697266px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector085 {
+    top: 18.57959747314453px;
+    left: 49.363136291503906px;
+    width: 12px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector086 {
+    top: 22.050596237182617px;
+    left: 61.8609619140625px;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector087 {
+    top: 24.858600616455078px;
+    left: 74.77753448486328px;
+    width: 12px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector088 {
+    top: 27.448200225830078px;
+    left: 86.86381530761719px;
+    width: 16px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector089 {
+    top: 28.89900016784668px;
+    left: 102.48068237304688px;
+    width: 16px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector090 {
+    top: 30.240596771240234px;
+    left: 118.49463653564453px;
+    width: 15px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector091 {
+    top: 30.93480110168457px;
+    left: 133.1367950439453px;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector092 {
+    top: 31.176599502563477px;
+    left: 147.63455200195312px;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector093 {
+    top: 30.93480110168457px;
+    left: 161.69912719726562px;
+    width: 13px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector094 {
+    top: 29.780399322509766px;
+    left: 174.45684814453125px;
+    width: 13px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector095 {
+    top: 28.033201217651367px;
+    left: 187.59727478027344px;
+    width: 15px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector096 {
+    top: 26.11440086364746px;
+    left: 203.03363037109375px;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector097 {
+    top: 23.86019515991211px;
+    left: 216.49168395996094px;
+    width: 15px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector098 {
+    top: 20.35799789428711px;
+    left: 231.19882202148438px;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector099 {
+    top: 16.660799026489258px;
+    left: 243.86273193359375px;
+    width: 12px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector100 {
+    top: 13.61099624633789px;
+    left: 256.3460998535156px;
+    width: 8px;
+    height: 11px;
+    position: absolute;
+  }
+  .slide-screens-vector101 {
+    top: 15.233397483825684px;
+    left: 39.746097564697266px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector102 {
+    top: 18.57959747314453px;
+    left: 49.363136291503906px;
+    width: 12px;
+    height: 11px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector103 {
+    top: 22.050596237182617px;
+    left: 61.8609619140625px;
+    width: 13px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector104 {
+    top: 24.858600616455078px;
+    left: 74.77753448486328px;
+    width: 12px;
+    height: 10px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector105 {
+    top: 27.448200225830078px;
+    left: 86.86381530761719px;
+    width: 16px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector106 {
+    top: 28.89900016784668px;
+    left: 102.48068237304688px;
+    width: 16px;
+    height: 11px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector107 {
+    top: 30.240596771240234px;
+    left: 118.49463653564453px;
+    width: 15px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector108 {
+    top: 30.93480110168457px;
+    left: 133.1367950439453px;
+    width: 14px;
+    height: 12px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector109 {
+    top: 31.176599502563477px;
+    left: 147.63455200195312px;
+    width: 14px;
+    height: 12px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector110 {
+    top: 30.93480110168457px;
+    left: 161.69912719726562px;
+    width: 13px;
+    height: 9px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector111 {
+    top: 29.780399322509766px;
+    left: 174.45684814453125px;
+    width: 13px;
+    height: 10px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector112 {
+    top: 28.033201217651367px;
+    left: 187.59727478027344px;
+    width: 15px;
+    height: 11px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector113 {
+    top: 26.11440086364746px;
+    left: 203.03363037109375px;
+    width: 13px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector114 {
+    top: 23.86019515991211px;
+    left: 216.49168395996094px;
+    width: 15px;
+    height: 11px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector115 {
+    top: 20.35799789428711px;
+    left: 231.19882202148438px;
+    width: 13px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector116 {
+    top: 16.660799026489258px;
+    left: 243.86273193359375px;
+    width: 12px;
+    height: 13px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector117 {
+    top: 13.61099624633789px;
+    left: 256.3460998535156px;
+    width: 8px;
+    height: 11px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector118 {
+    top: -0.0000015258789289873675px;
+    left: 223.87777709960938px;
+    width: 79px;
+    height: 42px;
+    position: absolute;
+  }
+  .slide-screens-vector119 {
+    top: 4.282199859619141px;
+    left: 229.08335876464844px;
+    width: 72px;
+    height: 46px;
+    position: absolute;
+  }
+  .slide-screens-vector120 {
+    top: 4.282199859619141px;
+    left: 229.08335876464844px;
+    width: 13px;
+    height: 14px;
+    opacity: 0.50;
+    position: absolute;
+  }
+  .slide-screens-vector121 {
+    top: 13.766999244689941px;
+    left: 242.03604125976562px;
+    width: 16px;
+    height: 17px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-vector122 {
+    top: 22.760398864746094px;
+    left: 258.14385986328125px;
+    width: 14px;
+    height: 16px;
+    opacity: 0.50;
+    position: absolute;
+  }
+  .slide-screens-vector123 {
+    top: 29.507400512695312px;
+    left: 271.75360107421875px;
+    width: 14px;
+    height: 16px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-vector124 {
+    top: 35.37299728393555px;
+    left: 285.8036804199219px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.50;
+    position: absolute;
+  }
+  .slide-screens-vector125 {
+    top: 0px;
+    left: 0px;
+    width: 79px;
+    height: 42px;
+    position: absolute;
+  }
+  .slide-screens-vector126 {
+    top: 4.282199859619141px;
+    left: 1.971059799194336px;
+    width: 72px;
+    height: 46px;
+    position: absolute;
+  }
+  .slide-screens-vector127 {
+    top: 35.08440017700195px;
+    left: 1.971059799194336px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-vector128 {
+    top: 29.27339744567871px;
+    left: 17.313560485839844px;
+    width: 14px;
+    height: 16px;
+    opacity: 0.50;
+    position: absolute;
+  }
+  .slide-screens-vector129 {
+    top: 22.885194778442383px;
+    left: 31.38534164428711px;
+    width: 13px;
+    height: 15px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-vector130 {
+    top: 13.704598426818848px;
+    left: 44.85063552856445px;
+    width: 16px;
+    height: 17px;
+    opacity: 0.50;
+    position: absolute;
+  }
+  .slide-screens-vector131 {
+    top: 4.282199859619141px;
+    left: 61.2689208984375px;
+    width: 13px;
+    height: 14px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-freepik-bannerinject97 {
+    top: 44.459999084472656px;
+    left: 79.14564514160156px;
+    width: 192.1819610595703px;
+    height: 48.16032791137695px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector132 {
+    top: 0px;
+    left: 0px;
+    width: 192px;
+    height: 48px;
+    position: absolute;
+  }
+  .slide-screens-group {
+    top: 0px;
+    left: 0px;
+    width: 192.1819610595703px;
+    height: 48.16032791137695px;
+    display: flex;
+    opacity: 0.20;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector133 {
+    top: 0px;
+    left: 0px;
+    width: 192px;
+    height: 48px;
+    position: absolute;
+  }
+  .slide-screens-vector134 {
+    top: 1.2168020009994507px;
+    left: 180.46864318847656px;
+    width: 10px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector135 {
+    top: 1.6379997730255127px;
+    left: 188.8102264404297px;
+    width: 3px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector136 {
+    top: 0.7800009250640869px;
+    left: 180.8375244140625px;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector137 {
+    top: 1.1856012344360352px;
+    left: 1.249053716659546px;
+    width: 10px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector138 {
+    top: 1.6379997730255127px;
+    left: 0.41875264048576355px;
+    width: 3px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector139 {
+    top: 0.7800009250640869px;
+    left: 1.9277355670928955px;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector140 {
+    top: 14.040000915527344px;
+    left: 17.118616104125977px;
+    width: 32px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector141 {
+    top: 14.040000915527344px;
+    left: 51.24755859375px;
+    width: 15px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector142 {
+    top: 14.040000915527344px;
+    left: 70.17117309570312px;
+    width: 14px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector143 {
+    top: 13.747262954711914px;
+    left: 85.6220474243164px;
+    width: 19px;
+    height: 22px;
+    position: absolute;
+  }
+  .slide-screens-vector144 {
+    top: 13.734111785888672px;
+    left: 105.87368774414062px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+  }
+  .slide-screens-vector145 {
+    top: 14.040000915527344px;
+    left: 130.97079467773438px;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector146 {
+    top: 14.040000915527344px;
+    left: 157.8436279296875px;
+    width: 15px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-freepikcharacter5inject97 {
+    top: 124.42455291748047px;
+    left: 214.26792907714844px;
+    width: 70.57933044433594px;
+    height: 200.6404266357422px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector147 {
+    top: 69.18704986572266px;
+    left: 4.108184814453125px;
+    width: 7px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector148 {
+    top: 69.17144775390625px;
+    left: 0.0000029907225780334556px;
+    width: 7px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector149 {
+    top: 64.74884796142578px;
+    left: 7.501593589782715px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector150 {
+    top: 29.39051628112793px;
+    left: 8.548480033874512px;
+    width: 28px;
+    height: 43px;
+    position: absolute;
+  }
+  .slide-screens-vector151 {
+    top: 194.09620666503906px;
+    left: 52.683990478515625px;
+    width: 18px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector152 {
+    top: 193.91677856445312px;
+    left: 25.229990005493164px;
+    width: 18px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector153 {
+    top: 64.44464874267578px;
+    left: 30.51095962524414px;
+    width: 40px;
+    height: 130px;
+    position: absolute;
+  }
+  .slide-screens-vector154 {
+    top: 64.44464874267578px;
+    left: 30.51095962524414px;
+    width: 40px;
+    height: 130px;
+    opacity: 0.10;
+    position: absolute;
+  }
+  .slide-screens-vector155 {
+    top: 89.42805480957031px;
+    left: 42.07095718383789px;
+    width: 8px;
+    height: 18px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector156 {
+    top: 27.352144241333008px;
+    left: 29.083881378173828px;
+    width: 39px;
+    height: 53px;
+    position: absolute;
+  }
+  .slide-screens-vector157 {
+    top: 27.352144241333008px;
+    left: 29.07400894165039px;
+    width: 39px;
+    height: 53px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector158 {
+    top: 17.28584098815918px;
+    left: 38.13604736328125px;
+    width: 10px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector159 {
+    top: 18.57284927368164px;
+    left: 38.13604736328125px;
+    width: 6px;
+    height: 10px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector160 {
+    top: 5.492245197296143px;
+    left: 27.21200942993164px;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector161 {
+    top: 3.9098219871520996px;
+    left: 28.473966598510742px;
+    width: 15px;
+    height: 22px;
+    position: absolute;
+  }
+  .slide-screens-vector162 {
+    top: 3.4876513481140137px;
+    left: 36.850887298583984px;
+    width: 8px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector163 {
+    top: 10.497749328613281px;
+    left: 41.05055618286133px;
+    width: 5px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector164 {
+    top: 0.000003051757857974735px;
+    left: 23.32275390625px;
+    width: 20px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector165 {
+    top: 13.239924430847168px;
+    left: 34.29017639160156px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector166 {
+    top: 14.597509384155273px;
+    left: 30.033489227294922px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector167 {
+    top: 15.90524959564209px;
+    left: 31.349252700805664px;
+    width: 1px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector168 {
+    top: 10.140157699584961px;
+    left: 33.296634674072266px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector169 {
+    top: 11.608442306518555px;
+    left: 28.06334686279297px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector170 {
+    top: 17.122047424316406px;
+    left: 33.435821533203125px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector171 {
+    top: 17.153242111206055px;
+    left: 33.962890625px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector172 {
+    top: 18.845840454101562px;
+    left: 35.54058837890625px;
+    width: 2px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector173 {
+    top: 32.12144470214844px;
+    left: 35.46466064453125px;
+    width: 25px;
+    height: 38px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector174 {
+    top: 67.7518539428711px;
+    left: 26.547956466674805px;
+    width: 7px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector175 {
+    top: 67.7440414428711px;
+    left: 22.439775466918945px;
+    width: 7px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector176 {
+    top: 63.31364822387695px;
+    left: 29.941343307495117px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector177 {
+    top: 27.35471534729004px;
+    left: 32.10013961791992px;
+    width: 28px;
+    height: 43px;
+    position: absolute;
+  }
+  .slide-screens-freepikcharacter4inject97 {
+    top: 199.61126708984375px;
+    left: 177.08409118652344px;
+    width: 49.29796600341797px;
+    height: 125.91393280029297px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector178 {
+    top: 79.79252624511719px;
+    left: 23.562965393066406px;
+    width: 9px;
+    height: 42px;
+    position: absolute;
+  }
+  .slide-screens-vector179 {
+    top: 71.78193664550781px;
+    left: 21.408159255981445px;
+    width: 13px;
+    height: 24px;
+    position: absolute;
+  }
+  .slide-screens-vector180 {
+    top: 74.4183349609375px;
+    left: 26.577659606933594px;
+    width: 7px;
+    height: 19px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector181 {
+    top: 78.52112579345703px;
+    left: 32.2959098815918px;
+    width: 14px;
+    height: 41px;
+    position: absolute;
+  }
+  .slide-screens-vector182 {
+    top: 57.5859260559082px;
+    left: 21.40093231201172px;
+    width: 22px;
+    height: 38px;
+    position: absolute;
+  }
+  .slide-screens-vector183 {
+    top: 9.597620010375977px;
+    left: 21.798023223876953px;
+    width: 16px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector184 {
+    top: 13.525779724121094px;
+    left: 16.343713760375977px;
+    width: 11px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector185 {
+    top: 24.12854766845703px;
+    left: 1.520273208618164px;
+    width: 31px;
+    height: 19px;
+    position: absolute;
+  }
+  .slide-screens-vector186 {
+    top: 23.258140563964844px;
+    left: 0.267988383769989px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector187 {
+    top: 20.149852752685547px;
+    left: 0.000003601074240577873px;
+    width: 5px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector188 {
+    top: 33.45272445678711px;
+    left: 20.520090103149414px;
+    width: 22px;
+    height: 33px;
+    position: absolute;
+  }
+  .slide-screens-vector189 {
+    top: 12.384891510009766px;
+    left: 25.669519424438477px;
+    width: 9px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector190 {
+    top: 25.590333938598633px;
+    left: 24.8826961517334px;
+    width: 8px;
+    height: 14px;
+    position: absolute;
+  }
+  .slide-screens-vector191 {
+    top: 17.424209594726562px;
+    left: 18.613492965698242px;
+    width: 3px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector192 {
+    top: 27.904483795166016px;
+    left: 25.32861328125px;
+    width: 5px;
+    height: 6px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector193 {
+    top: 15.289682388305664px;
+    left: 19.100614547729492px;
+    width: 12px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector194 {
+    top: 22.437746047973633px;
+    left: 29.840364456176758px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector195 {
+    top: 22.44791030883789px;
+    left: 29.737180709838867px;
+    width: 3px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector196 {
+    top: 22.758764266967773px;
+    left: 23.3934383392334px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector197 {
+    top: 22.734935760498047px;
+    left: 19.89893913269043px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector198 {
+    top: 24.11612319946289px;
+    left: 20.086885452270508px;
+    width: 1px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector199 {
+    top: 20.335308074951172px;
+    left: 23.328548431396484px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector200 {
+    top: 20.348731994628906px;
+    left: 18.813053131103516px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector201 {
+    top: 26.17533302307129px;
+    left: 21.40093231201172px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector202 {
+    top: 26.17533302307129px;
+    left: 21.884658813476562px;
+    width: 3px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector203 {
+    top: 27.665136337280273px;
+    left: 22.657203674316406px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector204 {
+    top: 25.309520721435547px;
+    left: 34.939754486083984px;
+    width: 7px;
+    height: 16px;
+    position: absolute;
+  }
+  .slide-screens-vector205 {
+    top: 2.1825263500213623px;
+    left: 31.573909759521484px;
+    width: 5px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector206 {
+    top: -3.0517577442878974e-7px;
+    left: 31.4569091796875px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector207 {
+    top: 6.88592529296875px;
+    left: 33.81931686401367px;
+    width: 8px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector208 {
+    top: 33.38683319091797px;
+    left: 34.311439514160156px;
+    width: 7px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector209 {
+    top: 14.501803398132324px;
+    left: 26.01370620727539px;
+    width: 7px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector210 {
+    top: 9.48759937286377px;
+    left: 17.503236770629883px;
+    width: 11px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector211 {
+    top: 121.49079895019531px;
+    left: 18.53575897216797px;
+    width: 12px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector212 {
+    top: 117.14257049560547px;
+    left: 38.17802429199219px;
+    width: 11px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-freepikcharacter3inject97 {
+    top: 231.24179077148438px;
+    left: 135.1415252685547px;
+    width: 52.66133117675781px;
+    height: 93.75301361083984px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-freepikgroupinject97 {
+    top: 0px;
+    left: 0px;
+    width: 52.66133117675781px;
+    height: 93.75301361083984px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector213 {
+    top: 24.34134292602539px;
+    left: 44.203269958496094px;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector214 {
+    top: 24.083406448364258px;
+    left: 32.86787414550781px;
+    width: 14px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector215 {
+    top: 24.060007095336914px;
+    left: 32.86787414550781px;
+    width: 14px;
+    height: 10px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector216 {
+    top: 28.435819625854492px;
+    left: 33.191017150878906px;
+    width: 3px;
+    height: 4px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector217 {
+    top: 56.03219985961914px;
+    left: 13.402758598327637px;
+    width: 12px;
+    height: 35px;
+    position: absolute;
+  }
+  .slide-screens-vector218 {
+    top: 54.69059753417969px;
+    left: 34.023075103759766px;
+    width: 11px;
+    height: 35px;
+    position: absolute;
+  }
+  .slide-screens-vector219 {
+    top: 54.68281555175781px;
+    left: 34.03752136230469px;
+    width: 8px;
+    height: 12px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector220 {
+    top: 56.03219985961914px;
+    left: 19.294269561767578px;
+    width: 7px;
+    height: 12px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector221 {
+    top: 85.98086547851562px;
+    left: 40.922157287597656px;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector222 {
+    top: 85.18081665039062px;
+    left: 45.08064270019531px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector223 {
+    top: 84.6241226196289px;
+    left: 44.785552978515625px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector224 {
+    top: 89.51747131347656px;
+    left: 12.65182876586914px;
+    width: 10px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector225 {
+    top: 89.28008270263672px;
+    left: 17.247638702392578px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector226 {
+    top: 88.39994049072266px;
+    left: 17.253398895263672px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector227 {
+    top: 20.398353576660156px;
+    left: 17.033403396606445px;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+  }
+  .slide-screens-vector228 {
+    top: 20.402185440063477px;
+    left: 17.039243698120117px;
+    width: 20px;
+    height: 24px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector229 {
+    top: 14.286608695983887px;
+    left: 21.980112075805664px;
+    width: 7px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector230 {
+    top: 15.940204620361328px;
+    left: 23.178634643554688px;
+    width: 6px;
+    height: 5px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector231 {
+    top: 1.7009197473526px;
+    left: 26.04497528076172px;
+    width: 13px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector232 {
+    top: 1.9782092571258545px;
+    left: 28.282209396362305px;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector233 {
+    top: 2.0112011432647705px;
+    left: 19.24891471862793px;
+    width: 15px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector234 {
+    top: 0.0000018310546465727384px;
+    left: 17.459272384643555px;
+    width: 15px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector235 {
+    top: 9.626127243041992px;
+    left: 28.104507446289062px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector236 {
+    top: 8.86276626586914px;
+    left: 31.90232276916504px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector237 {
+    top: 7.470986843109131px;
+    left: 27.14908218383789px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector238 {
+    top: 6.732381820678711px;
+    left: 30.836795806884766px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector239 {
+    top: 10.558209419250488px;
+    left: 31.026769638061523px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector240 {
+    top: 10.753471374511719px;
+    left: 20.957515716552734px;
+    width: 3px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector241 {
+    top: 13.186805725097656px;
+    left: 28.131113052368164px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector242 {
+    top: 13.163406372070312px;
+    left: 28.160429000854492px;
+    width: 3px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector243 {
+    top: 14.60641098022461px;
+    left: 28.153213500976562px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector244 {
+    top: 3.7624640464782715px;
+    left: 17.394834518432617px;
+    width: 12px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector245 {
+    top: 24.122421264648438px;
+    left: 17.012758255004883px;
+    width: 2px;
+    height: 6px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector246 {
+    top: 33.342002868652344px;
+    left: -0.00000527954080098425px;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector247 {
+    top: 21.392419815063477px;
+    left: 4.789292812347412px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+  }
+  .slide-screens-vector248 {
+    top: 21.392419815063477px;
+    left: 4.789292812347412px;
+    width: 15px;
+    height: 15px;
+    opacity: 0.40;
+    position: absolute;
+  }
+  .slide-screens-vector249 {
+    top: 40.471214294433594px;
+    left: 17.896970748901367px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+  }
+  .slide-screens-vector250 {
+    top: 40.471214294433594px;
+    left: 17.885623931884766px;
+    width: 26px;
+    height: 26px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector251 {
+    top: 51.26641082763672px;
+    left: 39.66910934448242px;
+    width: 3px;
+    height: 12px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector252 {
+    top: 46.89059829711914px;
+    left: 34.59345245361328px;
+    width: 5px;
+    height: 18px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector253 {
+    top: 47.584808349609375px;
+    left: 30.333656311035156px;
+    width: 4px;
+    height: 18px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector254 {
+    top: 48.20101547241211px;
+    left: 24.983633041381836px;
+    width: 3px;
+    height: 19px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector255 {
+    top: 48.89520263671875px;
+    left: 20.557769775390625px;
+    width: 2px;
+    height: 18px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-freepikcharacter2inject97 {
+    top: 235.56578063964844px;
+    left: 111.83981323242188px;
+    width: 57.418643951416016px;
+    height: 89.40166473388672px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector256 {
+    top: 16.28843116760254px;
+    left: 51.00728988647461px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector257 {
+    top: 15.157421112060547px;
+    left: 53.000003814697266px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector258 {
+    top: 19.23682975769043px;
+    left: 33.72982406616211px;
+    width: 18px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector259 {
+    top: 19.91542625427246px;
+    left: 25.98167610168457px;
+    width: 11px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector260 {
+    top: 19.91542625427246px;
+    left: 25.98167610168457px;
+    width: 11px;
+    height: 9px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector261 {
+    top: 3.6161444187164307px;
+    left: 16.762603759765625px;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+  }
+  .slide-screens-vector262 {
+    top: 52.293209075927734px;
+    left: 2.380584478378296px;
+    width: 27px;
+    height: 24px;
+    position: absolute;
+  }
+  .slide-screens-vector263 {
+    top: 54.16522979736328px;
+    left: 26.97190284729004px;
+    width: 8px;
+    height: 33px;
+    position: absolute;
+  }
+  .slide-screens-vector264 {
+    top: 85.10567474365234px;
+    left: 26.69631576538086px;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector265 {
+    top: 85.16344451904297px;
+    left: 31.174123764038086px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector266 {
+    top: 84.29656219482422px;
+    left: 31.210050582885742px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector267 {
+    top: 73.04640197753906px;
+    left: -0.0000015563964552711695px;
+    width: 8px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector268 {
+    top: 76.04419708251953px;
+    left: 5.2333855628967285px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector269 {
+    top: 75.20841979980469px;
+    left: 5.224605083465576px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector270 {
+    top: 19.494482040405273px;
+    left: 13.836098670959473px;
+    width: 18px;
+    height: 23px;
+    position: absolute;
+  }
+  .slide-screens-vector271 {
+    top: 19.494482040405273px;
+    left: 13.836098670959473px;
+    width: 18px;
+    height: 23px;
+    opacity: 0.70;
+    position: absolute;
+  }
+  .slide-screens-vector272 {
+    top: 19.818044662475586px;
+    left: 17.828338623046875px;
+    width: 10px;
+    height: 6px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector273 {
+    top: 18.6832275390625px;
+    left: 17.57624053955078px;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector274 {
+    top: 18.6832275390625px;
+    left: 17.57624053955078px;
+    width: 10px;
+    height: 6px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-vector275 {
+    top: 14.533431053161621px;
+    left: 18.2429256439209px;
+    width: 7px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector276 {
+    top: 15.734613418579102px;
+    left: 19.210403442382812px;
+    width: 6px;
+    height: 5px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector277 {
+    top: 2.4824211597442627px;
+    left: 24.475177764892578px;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector278 {
+    top: 1.8030871152877808px;
+    left: 16.28300666809082px;
+    width: 13px;
+    height: 16px;
+    position: absolute;
+  }
+  .slide-screens-vector279 {
+    top: 0.000003662109293145477px;
+    left: 14.686687469482422px;
+    width: 14px;
+    height: 16px;
+    position: absolute;
+  }
+  .slide-screens-vector280 {
+    top: 9.315228462219238px;
+    left: 23.932289123535156px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector281 {
+    top: 9.284022331237793px;
+    left: 28.076560974121094px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector282 {
+    top: 7.311956405639648px;
+    left: 23.29400634765625px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector283 {
+    top: 7.115551948547363px;
+    left: 27.430566787719727px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector284 {
+    top: 10.742618560791016px;
+    left: 27.02244758605957px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector285 {
+    top: 9.493780136108398px;
+    left: 17.429651260375977px;
+    width: 3px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector286 {
+    top: 0.21952147781848907px;
+    left: 12.817955017089844px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+  }
+  .slide-screens-vector287 {
+    top: 9.01882553100586px;
+    left: 24.278846740722656px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector288 {
+    top: 8.917421340942383px;
+    left: 28.37258529663086px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector289 {
+    top: 12.51321029663086px;
+    left: 23.944969177246094px;
+    width: 4px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector290 {
+    top: 12.489810943603516px;
+    left: 23.946731567382812px;
+    width: 3px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector291 {
+    top: 14.143430709838867px;
+    left: 24.141664505004883px;
+    width: 3px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector292 {
+    top: 37.70722579956055px;
+    left: 14.358561515808105px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector293 {
+    top: 39.493431091308594px;
+    left: 13.831504821777344px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+  }
+  .slide-screens-vector294 {
+    top: 38.273990631103516px;
+    left: 25.660072326660156px;
+    width: 3px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector295 {
+    top: 39.204811096191406px;
+    left: 20.871004104614258px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector296 {
+    top: 37.83980941772461px;
+    left: 30.105390548706055px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector297 {
+    top: 28.916608810424805px;
+    left: 35.794742584228516px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector298 {
+    top: 28.916608810424805px;
+    left: 39.49860763549805px;
+    width: 3px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector299 {
+    top: 25.25062370300293px;
+    left: 18.611141204833984px;
+    width: 18px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector300 {
+    top: 22.132980346679688px;
+    left: 11.470617294311523px;
+    width: 11px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector301 {
+    top: 22.132980346679688px;
+    left: 11.470617294311523px;
+    width: 11px;
+    height: 10px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .slide-screens-freepikcharacter1inject97 {
+    top: 149.71038818359375px;
+    left: 73.39908599853516px;
+    width: 55.20355224609375px;
+    height: 175.13621520996094px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slide-screens-vector302 {
+    top: 156.0496063232422px;
+    left: 16.201112747192383px;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector303 {
+    top: 156.07301330566406px;
+    left: 17.37075424194336px;
+    width: 6px;
+    height: 7px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector304 {
+    top: 156.0496063232422px;
+    left: 8.056953430175781px;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+  }
+  .slide-screens-vector305 {
+    top: 156.07301330566406px;
+    left: 9.226595878601074px;
+    width: 6px;
+    height: 7px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector306 {
+    top: 167.7066192626953px;
+    left: 14.507636070251465px;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector307 {
+    top: 166.62298583984375px;
+    left: 20.98489761352539px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector308 {
+    top: 167.7066192626953px;
+    left: 6.3835225105285645px;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector309 {
+    top: 166.62124633789062px;
+    left: 12.840738296508789px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector310 {
+    top: 157.6876220703125px;
+    left: 16.47547721862793px;
+    width: 2px;
+    height: 3px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector311 {
+    top: 55.804019927978516px;
+    left: -0.0000014953612890167278px;
+    width: 37px;
+    height: 105px;
+    position: absolute;
+  }
+  .slide-screens-vector312 {
+    top: 55.804019927978516px;
+    left: -0.0000014953612890167278px;
+    width: 37px;
+    height: 105px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector313 {
+    top: 71.45082092285156px;
+    left: 45.96195983886719px;
+    width: 6px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector314 {
+    top: 72.19180297851562px;
+    left: 49.16041564941406px;
+    width: 6px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector315 {
+    top: 67.96421813964844px;
+    left: 43.46383285522461px;
+    width: 5px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector316 {
+    top: 33.374664306640625px;
+    left: 31.53998374938965px;
+    width: 17px;
+    height: 39px;
+    position: absolute;
+  }
+  .slide-screens-vector317 {
+    top: 53.0272216796875px;
+    left: 5.08953332901001px;
+    width: 20px;
+    height: 8px;
+    position: absolute;
+  }
+  .slide-screens-vector318 {
+    top: 53.779659271240234px;
+    left: 11.475343704223633px;
+    width: 1px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector319 {
+    top: 55.78883361816406px;
+    left: 16.200468063354492px;
+    width: 4px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector320 {
+    top: 56.631080627441406px;
+    left: 22.975950241088867px;
+    width: 1px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector321 {
+    top: 24.631061553955078px;
+    left: 6.020914077758789px;
+    width: 33px;
+    height: 34px;
+    position: absolute;
+  }
+  .slide-screens-vector322 {
+    top: 24.631061553955078px;
+    left: 6.020914077758789px;
+    width: 33px;
+    height: 34px;
+    opacity: 0.30;
+    position: absolute;
+  }
+  .slide-screens-vector323 {
+    top: 20.407615661621094px;
+    left: 23.86153793334961px;
+    width: 8px;
+    height: 13px;
+    position: absolute;
+  }
+  .slide-screens-vector324 {
+    top: 20.41541290283203px;
+    left: 27.832538604736328px;
+    width: 5px;
+    height: 6px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector325 {
+    top: 26.616409301757812px;
+    left: 21.941017150878906px;
+    width: 12px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector326 {
+    top: 0.42475831508636475px;
+    left: 21.06739044189453px;
+    width: 25px;
+    height: 26px;
+    position: absolute;
+  }
+  .slide-screens-vector327 {
+    top: 0.000004882812390860636px;
+    left: 14.367232322692871px;
+    width: 15px;
+    height: 16px;
+    position: absolute;
+  }
+  .slide-screens-vector328 {
+    top: 2.824160575866699px;
+    left: 26.820003509521484px;
+    width: 3px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector329 {
+    top: 2.737407922744751px;
+    left: 25.836341857910156px;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+  }
+  .slide-screens-vector330 {
+    top: 3.864525556564331px;
+    left: 27.729167938232422px;
+    width: 15px;
+    height: 21px;
+    position: absolute;
+  }
+  .slide-screens-vector331 {
+    top: 3.8011598587036133px;
+    left: 27.12293243408203px;
+    width: 9px;
+    height: 10px;
+    position: absolute;
+  }
+  .slide-screens-vector332 {
+    top: 3.5888783931732178px;
+    left: 33.239540100097656px;
+    width: 10px;
+    height: 9px;
+    position: absolute;
+  }
+  .slide-screens-vector333 {
+    top: 13.433485984802246px;
+    left: 35.88515853881836px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector334 {
+    top: 15.172883033752441px;
+    left: 40.053096771240234px;
+    width: 1px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector335 {
+    top: 15.173810958862305px;
+    left: 40.74188995361328px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector336 {
+    top: 16.34381103515625px;
+    left: 38.03438949584961px;
+    width: 1px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector337 {
+    top: 10.809139251708984px;
+    left: 26.675825119018555px;
+    width: 3px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector338 {
+    top: 10.297073364257812px;
+    left: 35.74600601196289px;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector339 {
+    top: 12.264307975769043px;
+    left: 41.471988677978516px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+  .slide-screens-vector340 {
+    top: 13.434414863586426px;
+    left: 36.56873321533203px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector341 {
+    top: 17.170608520507812px;
+    left: 33.44485092163086px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector342 {
+    top: 17.18621253967285px;
+    left: 33.940650939941406px;
+    width: 3px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector343 {
+    top: 18.84761619567871px;
+    left: 33.44485092163086px;
+    width: 2px;
+    height: 3px;
+    position: absolute;
+  }
+  .slide-screens-vector344 {
+    top: 11.9026460647583px;
+    left: 34.85578918457031px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector345 {
+    top: 13.712942123413086px;
+    left: 39.28553009033203px;
+    width: 4px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector346 {
+    top: 14.834905624389648px;
+    left: 38.43149185180664px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  }
+  .slide-screens-vector347 {
+    top: 12.038969993591309px;
+    left: 30.48265266418457px;
+    width: 0px;
+    height: 5px;
+    position: absolute;
+  }
+  .slide-screens-vector348 {
+    top: 63.58061981201172px;
+    left: 28.778356552124023px;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+  }
+  .slide-screens-vector349 {
+    top: 64.67261505126953px;
+    left: 31.695232391357422px;
+    width: 6px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector350 {
+    top: 59.228206634521484px;
+    left: 26.049198150634766px;
+    width: 6px;
+    height: 7px;
+    position: absolute;
+  }
+  .slide-screens-vector351 {
+    top: 24.8762149810791px;
+    left: 13.220444679260254px;
+    width: 18px;
+    height: 41px;
+    position: absolute;
+  }
+  .slide-screens-vector352 {
+    top: 75.27281188964844px;
+    left: 16.323850631713867px;
+    width: 13px;
+    height: 85px;
+    opacity: 0.20;
+    position: absolute;
+  }
+  .slide-screens-vector353 {
+    top: 157.21180725097656px;
+    left: 16.47547721862793px;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+  }
+  .slide-screens-vector354 {
+    top: 157.36781311035156px;
+    left: 8.064175605773926px;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+  }
+  
