@@ -43,7 +43,7 @@ export class NotComponent {
      
 
      onsubmit(){
-      var obj={
+      const y={
         "code":this.notbaptised.value.code,
         "name":this.notbaptised.value.name,
         "sex":this.notbaptised.value.sex,
@@ -60,15 +60,9 @@ export class NotComponent {
         "email":this.notbaptised.value.email
   
       }
-      console.log(obj)
+      this.router.navigate(['/confirms'], { queryParams: y });
       
-      this.auth.notbaptised(obj).subscribe((data:any)=>{
-         // console.log(data)
-       // alert(data.message)
-       this.toastr.success(data.message)
-        window.location.href='#/thanks';
-
-      })
+    
   
      }
     

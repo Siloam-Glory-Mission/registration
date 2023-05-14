@@ -78,7 +78,7 @@ export class RegisterComponent {
      
 
      onsubmit(){
-      var obj={
+      const x={
         "code":this.updateform.value.code,
         "name":this.updateform.value.name,
         "cname":this.updateform.value.cname,
@@ -99,14 +99,16 @@ export class RegisterComponent {
         "email":this.updateform.value.email
   
       }
-      
-      this.auth.register(obj).subscribe((data:any)=>{
-         // console.log(data)
-        //alert(data.message)
-        this.toastr.success(data.message)
-        window.location.href='#/thanks';
+      this.router.navigate(['/confirm'], { queryParams: x });
 
-      })
+      
+      // this.auth.register(obj).subscribe((data:any)=>{
+      //    // console.log(data)
+      //   //alert(data.message)
+      //   this.toastr.success(data.message)
+      //   window.location.href='#/thanks';
+
+      // })
   
      }
      calculateAge(dateString: string) {

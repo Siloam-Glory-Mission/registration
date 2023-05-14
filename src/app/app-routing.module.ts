@@ -6,6 +6,8 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { Intro2Component } from './intro2/intro2.component';
 import { Intro3Component } from './intro3/intro3.component';
 import { NotComponent } from './not/not.component';
+import { ConfirmComponent } from './confirm/confirm.component';
+import { ConfirmsComponent } from './confirms/confirms.component';
 
 
 const routes: Routes = [
@@ -30,8 +32,16 @@ const routes: Routes = [
     component:Intro3Component
   },
   {
-    path:'not',
+    path:'notbaptised',
     component:NotComponent
+  },
+  {
+    path:'confirm',
+    component:ConfirmComponent
+  },
+  {
+    path:'confirms',
+    component:ConfirmsComponent
   }
 ];
 

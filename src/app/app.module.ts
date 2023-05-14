@@ -18,6 +18,8 @@ import { LoadingInterceptor } from './loading.interceptor';
 import { NotComponent } from './not/not.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConfirmComponent } from './confirm/confirm.component';
+import { ConfirmsComponent } from './confirms/confirms.component';
 
 
 
@@ -32,7 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     Intro3Component,
     ThanksComponent,
     SpinnerComponent,
-    NotComponent
+    NotComponent,
+    ConfirmComponent,
+    ConfirmsComponent
   ],
   imports: [
     BrowserModule,
