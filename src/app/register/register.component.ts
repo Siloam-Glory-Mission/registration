@@ -141,7 +141,7 @@ onChange(selectedValue:any): void {
  // console.log(selectedValue.target.value);
   if(selectedValue.target.value=='Not-Baptised')
   {
-    window.location.href='#/not'
+    window.location.href='#/notbaptised'
   }
 
 }
