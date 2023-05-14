@@ -49,6 +49,7 @@ export class NotComponent {
         "sex":this.notbaptised.value.sex,
         "dob":this.notbaptised.value.dob,
         "age":this.notbaptised.value.age,
+        "status":this.notbaptised.value.status,
         "occupation":this.notbaptised.value.occupation,
         "surname":this.notbaptised.value.surname,
         "marital":this.notbaptised.value.marital,

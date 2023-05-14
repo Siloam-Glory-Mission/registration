@@ -51,6 +51,7 @@ ngOnInit()
       var obj={
         "code":this.data.code,
         "name":this.data.name,
+        "status":this.data.status,
         "sex":this.data.sex,
         "dob":this.data.dob,
         "age":this.data.age,

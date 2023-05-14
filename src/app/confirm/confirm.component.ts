@@ -72,13 +72,13 @@ ngOnInit()
     console.log(obj)
 
     
-    // this.auth.register(obj).subscribe((data:any)=>{
-    //    // console.log(data)
-    //   //alert(data.message)
-    //   this.toastr.success(data.message)
-    //   window.location.href='#/thanks';
+    this.auth.register(obj).subscribe((data:any)=>{
+       // console.log(data)
+      //alert(data.message)
+      this.toastr.success(data.message)
+      window.location.href='#/thanks';
 
-    // })
+    })
 
    }
    backtoedit(){
