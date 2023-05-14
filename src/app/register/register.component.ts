@@ -5,6 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
 
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -15,7 +16,7 @@ export class RegisterComponent {
   randomNumber: any;
   age: any = [];
   dage: any=[];
-
+  obj: any;
 
   constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService){
     this.updateform=this.fb.group({
@@ -99,6 +100,7 @@ export class RegisterComponent {
         "email":this.updateform.value.email
   
       }
+      this.obj=x;
       this.router.navigate(['/confirm'], { queryParams: x });
 
       

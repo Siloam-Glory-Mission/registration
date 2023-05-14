@@ -11,6 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ConfirmsComponent {
   updateform: any;
   data: any;
+  form: any;
 
   constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService,private route:ActivatedRoute){
     this.updateform=this.fb.group({
@@ -31,7 +32,8 @@ export class ConfirmsComponent {
       village:['',Validators.required],
       city:['',Validators.required],
       phone:['',Validators.required],
-      email:['',Validators.required]
+      email:['',Validators.required],
+
     })
     
   }
@@ -44,6 +46,7 @@ ngOnInit()
     console.log(this.data)
   //  console.log(this.data);
   });  
+ 
 }
   onsubmit(){
     let code=this.data.code;
@@ -63,7 +66,8 @@ ngOnInit()
         "village":this.data.village,
         "city":this.data.city,
         "phone":this.data.phone,
-        "email":this.data.email
+        "email":this.data.email,
+        //"verified":hiddenInput
 
     }
     console.log(obj)
@@ -80,6 +84,7 @@ ngOnInit()
    backtoedit(){
     window.location.href='#/notbaptised';
    }
+   
 
 }
 

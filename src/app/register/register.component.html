@@ -13,10 +13,20 @@
                     <div id="surname">
                         <label class="text-sm">Surname</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Surname" formControlName="surname" required>
+                        <div *ngIf="updateform.controls['surname'].invalid && updateform.controls['surname'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['surname'].errors">
+                                <b>Enter Surname</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="name">
                         <label class="text-sm">Name</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Name" formControlName="name" required>
+                        <div *ngIf="updateform.controls['name'].invalid && updateform.controls['name'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['name'].errors">
+                                <b>Enter Name</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="baptised_status">
                         <label class="text-sm">Baptised Status</label>
@@ -28,11 +38,21 @@
                     </div><br>
                     <div id="christian_name">
                         <label class="text-sm">Enter Christian Name</label>
-                        <input type="text" id="sdobb" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="cname" placeholder="Enter Christian Name">
+                        <input type="text"  class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="cname" placeholder="Enter Christian Name">
+                        <div *ngIf="updateform.controls['cname'].invalid && updateform.controls['cname'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['cname'].errors">
+                                <b>Enter Christian Name</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="Baptism">
                         <label class="text-sm">Baptised Date</label>
                         <input type="date" (change)="calculateAge($any($event.target).value)" id="sdob" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="sdob">
+                        <div *ngIf="updateform.controls['sdob'].invalid && updateform.controls['sdob'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['sdob'].errors">
+                                <b>Enter Surname</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="sage">
                         <label class="text-sm">Spiritual Age</label>
@@ -49,6 +69,11 @@
                     <div id="dob">
                         <label class="text-sm">Date Of Birth</label>
                         <input type="date" (change)="dobage($any($event.target).value)" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="dob" required>
+                        <div *ngIf="updateform.controls['dob'].invalid && updateform.controls['dob'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['dob'].errors">
+                                <b>Enter Date Of Birth</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="age">
                         <label class="text-sm">Age</label>
@@ -82,29 +107,59 @@
                      <div id="dno">
                         <label class="text-sm">D.No.</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="dno" placeholder="Enter D.no" required>
+                        <div *ngIf="updateform.controls['dno'].invalid && updateform.controls['dno'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['dno'].errors">
+                                <b>Enter D.No</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="street">
                         <label class="text-sm">Street Details</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="parish" placeholder="Enter Street Details" required>
+                        <div *ngIf="updateform.controls['parish'].invalid && updateform.controls['parish'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['parish'].errors">
+                                <b>Enter Street Details</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="area">
                         <label class="text-sm">Area</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="village" placeholder="Enter Area" required>
+                        <div *ngIf="updateform.controls['village'].invalid && updateform.controls['village'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['village'].errors">
+                                <b>Enter Street Area</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="city">
                         <label class="text-sm">City</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="city" placeholder="Enter City" required>
+                        <div *ngIf="updateform.controls['city'].invalid && updateform.controls['city'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['city'].errors">
+                                <b>Enter City</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="email">
                         <label class="text-sm">E-Mail</label>
                         <input type="email" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="email" placeholder="Enter E-mail" >
+                        <div *ngIf="updateform.controls['email'].invalid && updateform.controls['email'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['email'].errors">
+                                <b>Enter Email</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="phone">
                         <label class="text-sm">Phone Number</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm"formControlName="phone" placeholder="Enter Phone Number" required>
+                        <div *ngIf="updateform.controls['phone'].invalid && updateform.controls['phone'].touched" class="text-danger text-center mt-2 ">
+                            <div *ngIf="updateform.controls['phone'].errors">
+                                <b>Enter Phone Number</b> 
+                            </div>
+                          </div>
                     </div><br>
                     <div id="submit" >
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
                             Next
                           </button>
                           
