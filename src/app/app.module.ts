@@ -8,7 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { HeadersComponent } from './layouts/headers/headers.component';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { HttpClientModule, HTTP_INTERCEPTORS  } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IntroComponent } from './intro/intro.component';
 import { Intro2Component } from './intro2/intro2.component';
 import { Intro3Component } from './intro3/intro3.component';
@@ -45,6 +45,7 @@ import { ConfirmsComponent } from './confirms/confirms.component';
     ReactiveFormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    FormsModule
     
   ],
   providers: [

@@ -43,8 +43,8 @@ ngOnInit()
 {
   this.route.queryParams.subscribe(params => {
     this.data = params;
-    console.log(this.data)
-  //  console.log(this.data);
+    // console.log(this.data)
+  //  // console.log(this.data);
   });  
  
 }
@@ -70,10 +70,10 @@ ngOnInit()
         //"verified":hiddenInput
 
     }
-    console.log(obj)
+    // (obj)
 
       this.auth.notbaptised(obj).subscribe((data:any)=>{
-         // console.log(data)
+         // // // console.log(data)
        // alert(data.message)
        this.toastr.success(data.message)
         window.location.href='#/thanks';

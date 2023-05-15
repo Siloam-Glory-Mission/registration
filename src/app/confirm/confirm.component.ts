@@ -41,8 +41,8 @@ ngOnInit()
 {
   this.route.queryParams.subscribe(params => {
     this.data = params;
-    console.log(this.data)
-  //  console.log(this.data);
+    // console.log(this.data)
+  //  // console.log(this.data);
   });  
 }
   onsubmit(){
@@ -69,11 +69,11 @@ ngOnInit()
       "email":this.data.email
 
     }
-    console.log(obj)
+    // console.log(obj)
 
     
     this.auth.register(obj).subscribe((data:any)=>{
-       // console.log(data)
+       // // console.log(data)
       //alert(data.message)
       this.toastr.success(data.message)
       window.location.href='#/thanks';

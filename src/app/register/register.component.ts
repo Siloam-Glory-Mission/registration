@@ -105,7 +105,7 @@ export class RegisterComponent {
 
       
       // this.auth.register(obj).subscribe((data:any)=>{
-      //    // console.log(data)
+      //    // // console.log(data)
       //   //alert(data.message)
       //   this.toastr.success(data.message)
       //   window.location.href='#/thanks';
@@ -114,7 +114,7 @@ export class RegisterComponent {
   
      }
      calculateAge(dateString: string) {
-       // console.log(dateString)
+       // // console.log(dateString)
       const dob = new Date(dateString);
       const today = new Date();
       const age = Math.floor((today.getTime() - dob.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
@@ -126,7 +126,7 @@ export class RegisterComponent {
       }
   }
   dobage(dateStringg: string) {
-     // console.log(dateStringg)
+     // // console.log(dateStringg)
     const dob = new Date(dateStringg);
     const today = new Date();
     const age = Math.floor((today.getTime() - dob.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
@@ -142,7 +142,7 @@ export class RegisterComponent {
 }
 
 onChange(selectedValue:any): void {
- // console.log(selectedValue.target.value);
+ // // console.log(selectedValue.target.value);
   if(selectedValue.target.value=='Not-Baptised')
   {
     window.location.href='#/notbaptised'
