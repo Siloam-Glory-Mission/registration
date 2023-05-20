@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-confirm',
   templateUrl: './confirm.component.html',
@@ -11,8 +12,14 @@ import { ToastrService } from 'ngx-toastr';
 export class ConfirmComponent {
   updateform: any;
   data: any;
-
-  constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService,private route:ActivatedRoute){
+  public isChecked = true;
+  checkboxValues: { [key: string]: boolean } = {
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false,
+  };
+  check: any;
+  constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService,private route:ActivatedRoute,private fm:FormsModule){
     this.updateform=this.fb.group({
       code:['',Validators.required],
       name:['',Validators.required],
@@ -31,7 +38,11 @@ export class ConfirmComponent {
       village:['',Validators.required],
       city:['',Validators.required],
       phone:['',Validators.required],
-      email:['',Validators.required]
+      email:['',Validators.required],
+      checkbox1: new FormControl(this.checkboxValues['checkbox1']),
+
+    //  / checkbox1: ['',Validators.required],
+
     })
     
   }
@@ -46,6 +57,8 @@ ngOnInit()
   });  
 }
   onsubmit(){
+    console.log(this.checkboxValues);
+
     let code=this.data.code;
 
       var obj={
@@ -66,10 +79,11 @@ ngOnInit()
       "village":this.data.village,
       "city":this.data.city,
       "phone":this.data.phone,
-      "email":this.data.email
+      "email":this.data.email,
+      "verified":this.check
 
     }
-    // console.log(obj)
+
 
     
     this.auth.register(obj).subscribe((data:any)=>{
@@ -84,5 +98,14 @@ ngOnInit()
    backtoedit(){
     window.location.href='#/register';
    }
+   updateCheckboxValue(checkboxName: string) {
+    console.log(checkboxName);
+    this.check=checkboxName;
+    this.checkboxValues[checkboxName] = this.updateform.get(checkboxName)?.value || false;
+  }
+  
+  
+  
+
 
 }

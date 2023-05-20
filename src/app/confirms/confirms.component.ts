@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-confirms',
@@ -12,7 +12,13 @@ export class ConfirmsComponent {
   updateform: any;
   data: any;
   form: any;
-
+  public isChecked = true;
+  checkboxValues: { [key: string]: boolean } = {
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false,
+  };
+  check: any;
   constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService,private route:ActivatedRoute){
     this.updateform=this.fb.group({
       code:['',Validators.required],
@@ -33,6 +39,8 @@ export class ConfirmsComponent {
       city:['',Validators.required],
       phone:['',Validators.required],
       email:['',Validators.required],
+      checkbox1: new FormControl(this.checkboxValues['checkbox1']),
+
 
     })
     
@@ -67,10 +75,9 @@ ngOnInit()
         "city":this.data.city,
         "phone":this.data.phone,
         "email":this.data.email,
-        //"verified":hiddenInput
+        "verified":this.check
 
     }
-    // (obj)
 
       this.auth.notbaptised(obj).subscribe((data:any)=>{
          // // // console.log(data)
@@ -84,6 +91,11 @@ ngOnInit()
    backtoedit(){
     window.location.href='#/notbaptised';
    }
+   updateCheckboxValue(checkboxName: string) {
+    console.log(checkboxName);
+    this.check=checkboxName;
+    this.checkboxValues[checkboxName] = this.updateform.get(checkboxName)?.value || false;
+  }
    
 
 }
