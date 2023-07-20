@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
- //private apiUrl = 'https://apissiloam.cyclic.app';
-private apiUrl='http://localhost:8080';
+ private apiUrl = 'https://apissiloam.cyclic.app';
+//private apiUrl='http://localhost:8080';
   updatedaata: any;
 
   constructor(private http: HttpClient,private router:Router) { }

@@ -100,8 +100,7 @@ ngOnInit()
    }
    updateCheckboxValue(checkboxName: string) {
     console.log(checkboxName);
-    this.check=checkboxName;
-    this.checkboxValues[checkboxName] = this.updateform.get(checkboxName)?.value || false;
+    
   }
   
   
