@@ -30,12 +30,14 @@
                     </div><br>
                     <div id="baptised_status">
                         <label class="text-sm">Baptised Status</label>
-                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="status" id="TravelPurpos" (change)="onChange($event)">
+                        <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="status" id="TravelPurpos">
                             <option value="">Select Baptised Status</option>
                             <option value="Baptised">Baptised</option>
                             <option value="Not-Baptised">Not-Baptised</option>
                         </select>
                     </div><br>
+                    <div *ngIf="updateform.get('status')?.value === 'Baptised'">
+
                     <div id="christian_name">
                         <label class="text-sm">Enter Christian Name</label>
                         <input type="text"  class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="cname" placeholder="Enter Christian Name">
@@ -58,6 +60,7 @@
                         <label class="text-sm">Spiritual Age</label>
                         <input type="text" [(ngModel)]="age" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="sage" id="sage" readonly>
                     </div><br>
+                    </div>
                     <div id="gender">
                         <label class="text-sm">Gender</label>
                         <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="sex" required>
@@ -79,7 +82,7 @@
                         <label class="text-sm">Age</label>
                         <input type="text" [(ngModel)]="dage" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="age" readonly >
                     </div><br>
-                    <div id="occupation">
+                    <!-- <div id="occupation">
                         <label class="text-sm">Occupation</label>
                         <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="occupation" required>
                             <option value="">Select Occupation</option>
@@ -93,15 +96,13 @@
                             <option value="Others">Others</option>
 
                         </select>
-                    </div><br>
+                    </div><br> -->
                     <div id="marital">
                         <label class="text-sm">Marital Status</label>
                         <select class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="marital" required>
                             <option value="">Select Marital Status</option>
                             <option value="Single">Single</option>
                             <option value="Married">Married</option>
-                            <option value="Widowed">Widowed</option>
-                            <option value="Divorced">Divorced</option>
                         </select>
                      </div><br>
                      <div id="dno">

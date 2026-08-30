@@ -141,12 +141,22 @@ export class RegisterComponent {
 
 }
 
-onChange(selectedValue:any): void {
- // // console.log(selectedValue.target.value);
-  if(selectedValue.target.value=='Not-Baptised')
-  {
-    window.location.href='#/notbaptised'
-  }
+onBaptisedStatusChange(): void {
+  const status = this.updateform.get('status')?.value;
 
+  if (status === 'Not-Baptised') {
+    this.updateform.patchValue({
+      cname: '',
+      sdob: '',
+      sage: ''
+    });
+    this.updateform.get('cname')?.clearValidators();
+    this.updateform.get('sdob')?.clearValidators();
+    this.updateform.get('sage')?.clearValidators();
+    this.updateform.get('cname')?.updateValueAndValidity();
+    this.updateform.get('sdob')?.updateValueAndValidity();
+    this.updateform.get('sage')?.updateValueAndValidity();
+  }
 }
+
 }

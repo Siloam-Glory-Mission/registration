@@ -32,10 +32,6 @@ const routes: Routes = [
     component:Intro3Component
   },
   {
-    path:'notbaptised',
-    component:NotComponent
-  },
-  {
     path:'confirm',
     component:ConfirmComponent
   },
