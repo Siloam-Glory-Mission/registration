@@ -100,16 +100,8 @@ export class RegisterComponent {
       "phoneNumber": this.updateform.value.phone
     }
     this.obj = x;
-    this.router.navigate(['/confirm'], { queryParams: x });
-
-
-    // this.auth.register(obj).subscribe((data:any)=>{
-    //    // // console.log(data)
-    //   //alert(data.message)
-    //   this.toastr.success(data.message)
-    //   window.location.href='#/thanks';
-
-    // })
+   // console.log(this.obj)
+  this.router.navigate(['/confirm'], { queryParams: x });
 
   }
   calculateAge(dateString: string) {
