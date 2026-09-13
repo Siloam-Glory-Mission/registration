@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
- private apiUrl = 'https://apissiloam.cyclic.app';
+ private apiUrl = 'https://ecommerce-backend-l8ij.onrender.com/api/';
 //private apiUrl='http://localhost:8080';
   updatedaata: any;
 
@@ -18,7 +18,7 @@ export class AuthService {
   
   register(obj:any)
   {
-    return this.http.post(`${this.apiUrl}/api/register`,obj)
+    return this.http.post(`${this.apiUrl}register/create`,obj)
   }
 
   notbaptised(obj:any){

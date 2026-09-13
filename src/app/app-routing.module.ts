@@ -12,11 +12,11 @@ import { ConfirmsComponent } from './confirms/confirms.component';
 
 const routes: Routes = [
   {
-    path:'register',
+    path:'',
     component:RegisterComponent
   },
   {
-    path:'',
+    path:'home',
     component:IntroComponent
   },
   {

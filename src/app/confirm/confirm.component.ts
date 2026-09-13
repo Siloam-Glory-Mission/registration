@@ -40,9 +40,6 @@ export class ConfirmComponent {
       phone:['',Validators.required],
       email:['',Validators.required],
       checkbox1: new FormControl(this.checkboxValues['checkbox1']),
-
-    //  / checkbox1: ['',Validators.required],
-
     })
     
   }
@@ -57,35 +54,24 @@ ngOnInit()
   });  
 }
   onsubmit(){
-    console.log(this.checkboxValues);
-
-    let code=this.data.code;
-
       var obj={
-      "code":this.data.code,
-      "name":this.data.name,
-      "cname":this.data.cname,
-      "sex":this.data.sex,
-      "dob":this.data.dob,
-      "sdob":this.data.sdob,
-      "status":this.data.status,
-      "age":this.data.age,
-      "sage":this.data.sage,
-      "occupation":this.data.occupation,
-      "surname":this.data.surname,
-      "marital":this.data.marital,
-      "dno":this.data.dno,
-      "parish":this.data.parish,
-      "village":this.data.village,
-      "city":this.data.city,
-      "phone":this.data.phone,
-      "email":this.data.email,
-      "verified":this.check
+      "name": this.data.name,
+      "surname": this.data.surname,
+      "gender": this.data.sex,
+      "dob": this.data.dob,
+      "age": this.data.age,
+      "occupation": this.data.occupation,
+      "marital": this.data.marital,
+      "village": this.data.village,
+      "city": this.data.city,
+      "baptizedStatus": this.data.baptizedStatus,
+      "Cname":this.data.Cname,
+      "baptizedDate": this.data.baptizedDate,
+      "Sage": this.data.Sage,
+      "phoneNumber": this.data.phoneNumber,
+      "area": this.data.village,
 
     }
-
-
-    
     this.auth.register(obj).subscribe((data:any)=>{
        // // console.log(data)
       //alert(data.message)
@@ -96,7 +82,7 @@ ngOnInit()
 
    }
    backtoedit(){
-    window.location.href='#/register';
+    window.location.href='/';
    }
    updateCheckboxValue(checkboxName: string) {
     console.log(checkboxName);
