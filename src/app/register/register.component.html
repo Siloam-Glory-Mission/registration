@@ -9,19 +9,25 @@
                    
                     <div id="surname">
                         <label class="text-sm">Surname</label>
-                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Surname" formControlName="surname" required>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Surname" formControlName="surname" required (keypress)="blockNumbers($event)" (paste)="blockPasteNumbers($event)">
                         <div *ngIf="updateform.controls['surname'].invalid && updateform.controls['surname'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['surname'].errors">
-                                <b>Enter Surname</b> 
+                            <div *ngIf="updateform.controls['surname'].errors?.['required']">
+                                <b>Enter Surname</b>
+                            </div>
+                            <div *ngIf="updateform.controls['surname'].errors?.['pattern']">
+                                <b>Surname cannot contain numbers</b>
                             </div>
                           </div>
                     </div><br>
                     <div id="name">
                         <label class="text-sm">Name</label>
-                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Name" formControlName="name" required>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" placeholder="Enter Name" formControlName="name" required (keypress)="blockNumbers($event)" (paste)="blockPasteNumbers($event)">
                         <div *ngIf="updateform.controls['name'].invalid && updateform.controls['name'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['name'].errors">
-                                <b>Enter Name</b> 
+                            <div *ngIf="updateform.controls['name'].errors?.['required']">
+                                <b>Enter Name</b>
+                            </div>
+                            <div *ngIf="updateform.controls['name'].errors?.['pattern']">
+                                <b>Name cannot contain numbers</b>
                             </div>
                           </div>
                     </div><br>
@@ -49,10 +55,13 @@
                     </div><br>
                     <div id="occupation">
                         <label class="text-sm">Occupation</label>
-                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="occupation" placeholder="Enter Occupation" required>
+                        <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="occupation" placeholder="Enter Occupation" required (keypress)="blockNumbers($event)" (paste)="blockPasteNumbers($event)">
                         <div *ngIf="updateform.controls['occupation'].invalid && updateform.controls['occupation'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['occupation'].errors">
+                            <div *ngIf="updateform.controls['occupation'].errors?.['required']">
                                 <b>Enter Occupation</b>
+                            </div>
+                            <div *ngIf="updateform.controls['occupation'].errors?.['pattern']">
+                                <b>Occupation cannot contain numbers</b>
                             </div>
                           </div>
                     </div><br>
@@ -68,7 +77,7 @@
                         <label class="text-sm">Area</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="village" placeholder="Enter Area" required>
                         <div *ngIf="updateform.controls['village'].invalid && updateform.controls['village'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['village'].errors">
+                            <div *ngIf="updateform.controls['village'].errors?.['required']">
                                 <b>Enter Street Area</b>
                             </div>
                           </div>
@@ -77,7 +86,7 @@
                         <label class="text-sm">City</label>
                         <input type="text" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="city" placeholder="Enter City" required>
                         <div *ngIf="updateform.controls['city'].invalid && updateform.controls['city'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['city'].errors">
+                            <div *ngIf="updateform.controls['city'].errors?.['required']">
                                 <b>Enter City</b>
                             </div>
                           </div>
@@ -85,7 +94,7 @@
                     
                     <div id="phone">
                         <label class="text-sm">Phone Number</label>
-                        <input type="text" inputmode="numeric" maxlength="10" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="phone" placeholder="Enter Phone Number" required>
+                        <input type="text" inputmode="numeric" maxlength="10" class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="phone" placeholder="Enter Phone Number" required (keypress)="blockNonDigits($event)" (paste)="blockPasteNonDigits($event)">
                         <div *ngIf="updateform.controls['phone'].invalid && updateform.controls['phone'].touched" class="text-danger text-center mt-2 ">
                             <div *ngIf="updateform.controls['phone'].errors?.['required']">
                                 <b>Enter Phone Number</b>
@@ -107,10 +116,13 @@
 
                     <div id="christian_name">
                         <label class="text-sm">Enter Christian Name</label>
-                        <input type="text"  class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="cname" placeholder="Enter Christian Name">
+                        <input type="text"  class="h-8 px-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" formControlName="cname" placeholder="Enter Christian Name" (keypress)="blockNumbers($event)" (paste)="blockPasteNumbers($event)">
                         <div *ngIf="updateform.controls['cname'].invalid && updateform.controls['cname'].touched" class="text-danger text-center mt-2 ">
-                            <div *ngIf="updateform.controls['cname'].errors">
-                                <b>Enter Christian Name</b> 
+                            <div *ngIf="updateform.controls['cname'].errors?.['required']">
+                                <b>Enter Christian Name</b>
+                            </div>
+                            <div *ngIf="updateform.controls['cname'].errors?.['pattern']">
+                                <b>Christian Name cannot contain numbers</b>
                             </div>
                           </div>
                     </div><br>

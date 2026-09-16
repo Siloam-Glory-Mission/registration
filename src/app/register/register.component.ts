@@ -20,16 +20,16 @@ export class RegisterComponent {
 
   constructor(private auth: AuthService, private router: Router, private fb: FormBuilder, private toastr: ToastrService) {
     this.updateform = this.fb.group({
-      name: ['', Validators.required],
-      cname: [''],
+      name: ['', [Validators.required, Validators.pattern(/^[^0-9]*$/)]],
+      cname: ['', Validators.pattern(/^[^0-9]*$/)],
       sex: ['', Validators.required],
       dob: ['', Validators.required],
       sdob: [''],
       status: ['', Validators.required],
       age: ['', Validators.required],
       sage: [''],
-      occupation: ['', Validators.required],
-      surname: ['', Validators.required],
+      occupation: ['', [Validators.required, Validators.pattern(/^[^0-9]*$/)]],
+      surname: ['', [Validators.required, Validators.pattern(/^[^0-9]*$/)]],
       marital: ['', Validators.required],
       village: ['', Validators.required],
       city: ['', Validators.required],
@@ -130,6 +130,32 @@ export class RegisterComponent {
 
 
 
+  }
+
+  blockNumbers(event: KeyboardEvent) {
+    if (/[0-9]/.test(event.key)) {
+      event.preventDefault();
+    }
+  }
+
+  blockPasteNumbers(event: ClipboardEvent) {
+    const pasted = event.clipboardData?.getData('text') ?? '';
+    if (/[0-9]/.test(pasted)) {
+      event.preventDefault();
+    }
+  }
+
+  blockNonDigits(event: KeyboardEvent) {
+    if (!/[0-9]/.test(event.key)) {
+      event.preventDefault();
+    }
+  }
+
+  blockPasteNonDigits(event: ClipboardEvent) {
+    const pasted = event.clipboardData?.getData('text') ?? '';
+    if (/\D/.test(pasted)) {
+      event.preventDefault();
+    }
   }
 
   onBaptisedStatusChange(status: string): void {
