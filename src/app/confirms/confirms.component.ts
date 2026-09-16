@@ -19,6 +19,8 @@ export class ConfirmsComponent {
     checkbox3: false,
   };
   check: any;
+  submitting = false;
+  errorMessage: string | null = null;
   constructor(private auth:AuthService,private router:Router,private fb: FormBuilder,private toastr: ToastrService,private route:ActivatedRoute){
     this.updateform=this.fb.group({
       code:['',Validators.required],
@@ -57,6 +59,11 @@ ngOnInit()
  
 }
   onsubmit(){
+    if(this.submitting){
+      return;
+    }
+    this.submitting=true;
+    this.errorMessage=null;
     let code=this.data.code;
 
       var obj={
@@ -79,12 +86,17 @@ ngOnInit()
 
     }
 
-      this.auth.notbaptised(obj).subscribe((data:any)=>{
-         // // // console.log(data)
-       // alert(data.message)
-       this.toastr.success(data.message)
-        window.location.href='#/thanks';
-
+      this.auth.notbaptised(obj).subscribe({
+        next:(data:any)=>{
+          this.toastr.success(data.message)
+          window.location.href='#/thanks';
+        },
+        error:(err)=>{
+          alert(err?.error?.message || (err?.status === 409 ? 'This registration already exists.' : 'Something went wrong. Please try again.'));
+          this.submitting=false;
+          this.errorMessage = err?.error?.message || (err?.status === 409 ? 'This registration already exists.' : 'Something went wrong. Please try again.');
+          this.toastr.error(this.errorMessage as string)
+        }
       })
 
    }

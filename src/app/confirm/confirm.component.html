@@ -71,12 +71,15 @@
 
                         <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have verified that all the above information is correct and no corrections are needed for the given data</label>
                     </div><br>
+                    <div *ngIf="errorMessage" class="mb-4 p-3 rounded bg-red-100 text-red-700 border border-red-300 text-sm">
+                        {{ errorMessage }}
+                    </div>
                     <div id="submit" >
-                        <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="backtoedit()">
-                            Edit
-                          </button> -->
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="onsubmit()" style="float: right;">
-                            Submit
+                        <button *ngIf="errorMessage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="backtoedit()">
+                           Edit
+                          </button>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" (click)="onsubmit()" [disabled]="submitting" style="float: right;">
+                            {{ submitting ? 'Submitting...' : 'Submit' }}
                           </button>
                     </div><br>
                      
